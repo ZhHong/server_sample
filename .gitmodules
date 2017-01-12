@@ -1,3 +1,6 @@
 [submodule "common/skynet"]
 	path = common/skynet
 	url = git@github.com:cloudwu/skynet.git
+[submodule "common/lualib-src/pbc"]
+	path = common/lualib-src/pbc
+	url = git@github.com:cloudwu/pbc.git
