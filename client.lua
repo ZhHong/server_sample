@@ -1,14 +1,14 @@
-package.cpath = "skynet/luaclib/?.so;luaclib/?.so"
-local service_path = "./lualib/?.lua;" .. "./common/?.lua;" .. "./global/?.lua;" .. "./?.lua"
-package.path = "skynet/lualib/?.lua;skynet/service/?.lua;" .. service_path
+package.cpath = "common/skynet/luaclib/?.so;common/luaclib/?.so"
+local service_path = "common/lualib/?.lua;" .. "common/?.lua;" .. "common/global/?.lua;" .. "./?.lua"
+package.path = "common/skynet/lualib/?.lua;common/skynet/service/?.lua;" .. service_path
 
 local socket = require "clientsocket"
 local crypt = require "crypt"
 local protobuf = require "protobuf"
 require "luaext"
 
-protobuf.register_file("protocol/netmsg.pb")
-protobuf.register_file("protocol/user.pb")
+protobuf.register_file("common/protocol/netmsg.pb")
+protobuf.register_file("common/protocol/user.pb")
 
 local LOGIN_HOST = "127.0.0.1"
 local LOGIN_PORT = 5188
