@@ -1,1 +1,1 @@
-./common/skynet/skynet ./config/config.center
+./common/skynet/skynet ./config/center_config.lua

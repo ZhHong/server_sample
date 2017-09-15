@@ -1,1 +1,1 @@
-./common/skynet/skynet ./config/config.game
+./common/skynet/skynet ./config/game_config.lua

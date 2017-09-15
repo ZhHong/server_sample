@@ -1,1 +1,1 @@
-./common/skynet/skynet ./config/config.login
+./common/skynet/skynet ./config/login_config.lua
